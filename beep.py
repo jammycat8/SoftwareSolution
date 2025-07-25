@@ -81,7 +81,7 @@ class MusicPlayer:
 
         slider_theme_frame = tk.Frame(self.right_frame)
         slider_theme_frame.pack(pady=5, anchor="w")
-        self.slider = tk.Scale(slider_theme_frame, from_=0, to=100, orient="horizontal", length=400)
+        self.slider = tk.Scale(slider_theme_frame, from_=0, to=100, orient="horizontal", length=400, showvalue=False)
         self.slider.pack(side="left", padx=10)
         self.slider.bind("<Button-1>", self.slider_click)
         self.theme_btn = tk.Button(slider_theme_frame, text="🌓", command=self.toggle_theme, width=2)
